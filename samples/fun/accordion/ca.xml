@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accordion>
+	<configuration>
+		<width>640</width>
+		<height>480</height>
+		<bordercolor>0x000000</bordercolor>
+		<arrowcolor>0xFFFFFF</arrowcolor>
+		<title>
+			<font>Verdana</font>
+			<size>12</size>
+			<color>0xFFFFFF</color>
+			<height>20</height>
+			<bgcolor>0x666666</bgcolor>
+			<bold>1</bold>
+			<italic>0</italic>
+			<underline>0</underline>
+		</title>
+		<content>
+			<font>Arial</font>
+			<size>13</size>
+			<color>0x000000</color>
+			<bgcolor>0xFFFFFF</bgcolor>
+		</content>
+	</configuration>
+	<bar>
+		<icon></icon>
+		<title>Introduction</title>
+		<content ><![CDATA[<font size="14">
+		
+		<b>Tutor-Marker Resources</b></font>
+		<br>
+		<p>Welcome to the Centre for Online and Distance Education's Tutor-Marker Resource Center.</p>
+		<br>
+		
+		<font size="14"><b>Purpose</b></font>
+		<br>
+		<p align="justify">Tutor-Marking effectively requires not only becoming familiar with the course content and design, but also mastering the tools and techniques used to deliver the course. Tutor-Marking activities throughout the semester vary depending on the how the course was designed. Your job as a tutor-marker is to guide students in learning the course content.</p>
+		<br>
+		
+		<font size="14"><b>What we can do for you</b></font>
+		<br>
+		<p align="justify">Whether you are a new or returning tutor-marker we are here to help you through all stages in the delivery of a course.</p>
+		]]></content>
+	</bar>
+	<bar>
+		<icon></icon>
+		<title>Tutor-Marker Administration</title>
+		<content><![CDATA[<img src="http://code.sfu.ca/files/FileManager/tm_admin.jpg">]]></content>
+	</bar>
+	<bar>
+		<icon></icon>
+		<title>Tutor-Marker Role</title>
+		<content><![CDATA[
+		<p>There are two main roles in the course; a tutor role and a marker role. The tutor role concerns communication with students. The marker role is focused on assessment of students. Each of these roles must be balanced for the duration of the course. </p><br>
+		<img src="http://code.sfu.ca/files/FileManager/tm_balance.jpg">
+		
+		]]></content>
+	</bar>
+	<bar>
+		<icon></icon>
+		<title>Supervisor vs. Tutor-Marker</title>
+		<content><![CDATA[<img src="http://code.sfu.ca/files/FileManager/tm_supervisor.jpg">]]>
+		</content>
+	</bar>
+	<bar>
+		<icon></icon>
+		<title>Evaluation</title>
+		<content><![CDATA[
+		<font size="14"><b>Evaluation</b></font>
+		<br>
+		<p>Students and TMs evaluation the course at the end of each term. The course supervisor also evaluates the TM. All faculties/departments get a copy of the student evaluation.</p>
+		
+		]]>
+		</content>
+	</bar>
+	
+</accordion>

@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!-- pedigree chart xml to be used with flash 
+	
+	Author: Bill Pickard, Simon Fraser University - bpickard@sfu.ca
+	
+	 Notes: It's not quite perfect, but as close as I could get for now:
+  
+     The diagram node and each connector node require a level attribute set to the nesting depth.
+	 
+	 If you find things crowded you can use a <shape type="spacer" /> to even out a level a bit.
+	 If you DO use a spacer, the connector won't necessarily connect properly, so you can add an extendleft=[number] to 
+	 shape node where [number] is the amount of pixels to extend left from the shape you add the attribute to.
+	 
+	 Valid tags are:
+	 
+	 <shape/>
+	 ---------
+	 @attributes
+	    type = "spacer","square","square_filled","circle","circle_filled","circle_filled_cross"
+		stem = "true"
+		answer = name (name from person list)
+		extendleft = number (used to make chart fit)
+	 <connector></connector>
+	 -----------------------
+	 @attributes
+		type = "single","double"
+		level = n where n is the level of nesting
+	 
+	 
+//-->
+<pedigreechart>
+	<diagram level="1">
+		<shape type="square"  answer="Maternal Great Uncle 1" stem="true" />
+		<shape type="square"  answer="Maternal Great Uncle 2" stem="true" />
+		<shape type="square"  answer="Maternal Great Uncle 3" stem="true" />
+		<shape type="square"  answer="Maternal Grandfather"   stem="true" />
+		<connector type="single" level="2">
+			<shape type="circle" answer="none" />
+			<connector type="single" level="3">
+				<shape type="square" answer="none" />
+				<connector type="single" level="4">
+					<shape type="square_filled" answer="Sophie's Son" stem="true" />
+				</connector>
+			    <shape type="circle" answer="Sophie" stem="true" />
+				<shape type="square" answer="Walter" stem="true" />
+				<connector type="single" level="4">
+					<shape type="square" answer="Walter's Son 1" stem="true" />
+					<shape type="square" answer="Walter's Son 2" stem="true" />
+					<shape type="square" answer="Walter's Son 3" stem="true" />
+				</connector>
+				<shape type="circle" answer="none" />
+			</connector>
+			<shape type="square_filled" answer="Uncle Richard" stem="true" />
+			<shape type="spacer" />
+			<shape type="spacer" />
+			<shape type="circle" answer="Mother" stem="true" />
+			<connector type="single" level="3">
+				<shape type="square" answer="Brother Neil" stem="true" />
+				<shape type="square_filled" answer="Brother Jeff" stem="true" />
+				<shape type="circle" label="Julia" answer="none" stem="true" />
+			</connector>
+			<shape type="square" answer="Father" />
+		</connector>
+		<shape type="circle" answer="Maternal Grandmother" />
+	</diagram>
+	<personlist>
+		<person name="Maternal Grandmother"/>
+		<person name="Maternal Grandfather"/>
+		<person name="Maternal Great Uncle 1" />
+		<person name="Maternal Great Uncle 2"/>
+		<person name="Maternal Great Uncle 3"/>
+		<person name="Uncle Richard"/>
+		<person name="Walter"/>
+		<person name="Sophie"/>
+		<person name="Mother"/>
+		<person name="Father"/>
+		<person name="Brother Jeff"/>
+		<person name="Brother Neil"/>
+		<person name="Sophie's Son" />
+		<person name="Walter's Son 1"/>
+		<person name="Walter's Son 2"/>
+		<person name="Walter's Son 3"/>
+	</personlist>
+</pedigreechart>

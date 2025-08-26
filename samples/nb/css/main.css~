@@ -1,0 +1,432 @@
+@font-face {
+    font-family: 'Poor Richard';
+    src: url('../fonts/PoorRichard-Regular.woff2') format('woff2'),
+         url('../fonts/PoorRichard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+  --shadow-on: 2px 2px 5px rgba(255,222,222,1);
+  --shadow-off: 0px 0px 0px rgba(0,0,0,0);
+}
+
+.brainArea{
+  font-family: 'Poor Richard', sans-serif;
+  font-size:1.8em;
+  color:white;
+  margin:0;
+  text-shadow: var(--shadow-off);
+  transition: text-shadow 1s;
+  text-align: center;
+}
+
+.brainArea:hover{
+  text-shadow: var(--shadow-on);
+  cursor:pointer;
+}
+
+
+#mindmap_title{
+  font-family:'Poor Richard', sans-serif;
+  font-size:700%;
+  color:white;
+  position: absolute;
+  top:0;
+  left:0;
+  font-weight: 100;
+  margin:0;
+  padding-left:3%;
+  padding-top:3%;
+  line-height: 0.8em;
+  user-select: none;
+  cursor:pointer;
+  transition: all 1s ease-in-out;
+}
+
+#mindmap_title:hover{
+  color:red;
+}
+
+#nb_interactive {
+  background:url('../media/mindmap_background.png');
+  width:800px;
+  height:800px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+#floating_scroller{
+  width:50%;
+  border-radius:12px;
+  height:330px;
+  border:2px solid white;
+  background-color:rgba(0,0,0,0.8);
+  z-index:49;
+  box-shadow:0px 0px 3px #fff;
+  position:absolute;
+  bottom:31%;
+  left:3%;
+  overflow: hidden;
+  transition: opacity 1s;
+  opacity:0;
+}
+
+#scroller_content{
+  color:white;
+  margin-top:300px;
+  padding:1em;
+  font-size:16pt;
+  font-family:'Arial Narrow', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#scroller_content a{
+  color:white;
+  text-decoration:none;
+  border-bottom:1px solid white;
+}
+
+.small {
+  font-size:14pt;
+  pointer-events: none;
+  transition: all 1s linear;
+  opacity:0;
+}
+
+
+.scroll{
+  transition: margin 120s linear;
+}
+
+.noscroll{
+  transition: none !important;
+}
+
+#scroller_close_btn{
+  position: absolute;
+  top:0px;
+  right:7px;
+  z-index:5;
+  color:white;
+  font-family:'Arial Black', Arial, Helvetica, sans-serif;
+  cursor:pointer;
+  user-select: none;
+}
+
+#scroller_close_btn:hover{
+  color:red;
+}
+
+#scroller_pause_btn{
+  position: absolute;
+  bottom:5px;
+  right:5px;
+  color:white;
+  z-index:5;
+  font-family:Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  user-select: none;
+}
+
+#scroller_pause_btn:hover{
+  color: #ccc;
+}
+
+/* Sensory Cortex */
+#sensory_cortex{
+  position: absolute;
+  right:25px;
+  top:25px;
+  z-index:50;
+}
+
+#sensory_cortex_text{
+  color:white;
+}
+
+#sensory_cortex_highlight{
+  position: absolute;
+  width:60px;
+  height:60px;
+  border-radius:999px;
+  background-color: rgba(255,0,0,0.35);
+  border: 4px dashed rgba(255,0,0,0.7);
+  top:133px;
+  right:17px;
+  z-index:5;
+  opacity:0;
+  transition: opacity 1s linear;
+}
+
+#sensory_cortex_line{
+  position: absolute;
+  width:75px;
+  height:75px;
+  border:5px solid;
+  border-color: rgba(255,0,0,0.7) transparent transparent transparent;
+  border-radius: 70%/50px 50px 0 0 ;
+  top:60px;
+  right:20px;
+  transform: rotate(-120deg);
+  transition: opacity 1s linear;
+  opacity: 0;
+  pointer-events: none;
+  z-index:1;
+}
+
+/* Frontal Lobe */
+#frontal_lobe{
+  position: absolute;
+  right:212px;
+  top:55px;
+  z-index:50;
+}
+
+#frontal_lobe_text{
+  color:whit<p align='center' style='color:red'><em>e;
+}
+
+#frontal_lobe_highlight{
+  position: absolute;
+  width:60px;
+  height:60px;
+  border-radius:999px;
+  background-color: rgba(255,0,0,0.35);
+  border: 4px dashed rgba(255,0,0,0.7);
+  top:155px;
+  right:175px;
+  z-index:5;
+  opacity:0;
+  transition: opacity 1s linear;
+}
+
+#frontal_lobe_line{
+  position: absolute;
+  width:75px;
+  height:75px;
+  border:5px solid;
+  border-color: rgba(255,0,0,0.7) transparent transparent transparent;
+  border-radius: 70%/50px 50px 0 0 ;
+  top:90px;
+  right:185px;
+  transform: rotate(-120deg);
+  transition: opacity 1s linear;
+  opacity: 0;
+  pointer-events: none;
+  z-index:1;
+}
+
+
+/* Brain Stem */
+#brain_stem{
+  position: absolute;
+  right:330px;
+  top:125px;
+  z-index:50;
+}
+
+#brain_stem_text{
+  color:white;
+}
+
+#brain_stem_highlight{
+  position: absolute;
+  width:60px;
+  height:60px;
+  border-radius:999px;
+  background-color: rgba(255,0,0,0.35);
+  border: 4px dashed rgba(255,0,0,0.7);
+  top:275px;
+  right:85px;
+  z-index:5;
+  opacity:0;
+  transition: opacity 1s linear;
+}
+
+#brain_stem_line{
+  position: absolute;
+  width:385px;
+  height:385px;
+  border:5px solid;
+  border-color: rgba(255,0,0,0.7) transparent transparent transparent;
+  border-radius: 70%/385px 385px 0 0 ;
+  top:-50px;
+  right:0;
+  transform: rotate(-150deg);
+  transition: opacity 1s linear;
+  opacity: 0;
+  pointer-events: none;
+  z-index:1;
+}
+
+
+/* Broca's Area */
+#brocas_area{
+  position: absolute;
+  right:380px;
+  top:215px;
+  z-index:50;
+}
+
+#brocas_area_text{
+  color:white;
+}
+
+#brocas_area_highlight{
+  position: absolute;
+  width:60px;
+  height:60px;
+  border-radius:999px;
+  background-color: rgba(255,0,0,0.35);
+  border: 4px dashed rgba(255,0,0,0.7);
+  top:197px;
+  right:160px;
+  z-index:5;
+  opacity:0;
+  transition: opacity 1s linear;
+}
+
+#brocas_area_line{
+  position: absolute;
+  width:365px;
+  height:355px;
+  border:5px solid;
+  border-color: rgba(255,0,0,0.7) transparent transparent transparent;
+  border-radius: 70%/385px 385px 0 0 ;
+  top:-25px;
+  right:146px;
+  transform: rotate(-185deg);
+  transition: opacity 1s linear;
+  opacity: 0;
+  pointer-events: none;
+  z-index:1;
+}
+
+
+/* Cerebellum */
+#cerebellum{
+  position: absolute;
+  right:430px;
+  top:310px;
+  z-index:50;
+}
+
+#cerebellum_text{
+  color:white;
+}
+
+#cerebellum_highlight{
+  position: absolute;
+  width:60px;
+  height:60px;
+  border-radius:999px;
+  background-color: rgba(255,0,0,0.35);
+  border: 4px dashed rgba(255,0,0,0.7);
+  top:281px;
+  right:9px;
+  z-index:5;
+  opacity:0;
+  transition: opacity 1s linear;
+}
+
+#cerebellum_line{
+  position: absolute;
+  width:572px;
+  height:385px;
+  border:5px solid;
+  border-color: rgba(255,0,0,0.7) transparent transparent transparent;
+  border-radius: 70%/385px 385px 0 0 ;
+  top:48px;
+  right:-3px;
+  transform: rotate(-187deg);
+  transition: opacity 1s linear;
+  opacity: 0;
+  pointer-events: none;
+  z-index:1;
+}
+
+
+/* Occipital Lobe */
+#occipital_lobe{
+  position: absolute;
+  right:440px;
+  top:407px;
+  z-index:50;
+}
+
+#occipital_lobe_text{
+  color:white;
+}
+
+#occipital_lobe_highlight{
+  position: absolute;
+  width:60px;
+  height:60px;
+  border-radius:999px;
+  background-color: rgba(255,0,0,0.35);
+  border: 4px dashed rgba(255,0,0,0.7);
+  top:201px;
+  right:-1px;
+  z-index:5;
+  opacity:0;
+  transition: opacity 1s linear;
+}
+
+#occipital_lobe_line{
+  position: absolute;
+  width:635px;
+  height:385px;
+  border:5px solid;
+  border-color: rgba(255,0,0,0.7) transparent transparent transparent;
+  border-radius: 70%/385px 385px 0 0 ;
+  top:64px;
+  right:-13px;
+  transform: rotate(-205deg);
+  transition: opacity 1s linear;
+  opacity: 0;
+  pointer-events: none;
+  z-index:1;
+}
+
+/* Occipital Lobe */
+#temporal_lobe{
+  position: absolute;
+  right:462px;
+  top:497px;
+  z-index:50;
+}
+
+#temporal_lobe_text{
+  color:white;
+}
+
+#temporal_lobe_highlight{
+  position: absolute;
+  width:60px;
+  height:60px;
+  border-radius:999px;
+  background-color: rgba(255,0,0,0.35);
+  border: 4px dashed rgba(255,0,0,0.7);
+  top:231px;
+  right:133px;
+  z-index:5;
+  opacity:0;
+  transition: opacity 1s linear;
+}
+
+#temporal_lobe_line{
+  position: absolute;
+  width:555px;
+  height:385px;
+  border:5px solid;
+  border-color: rgba(255,0,0,0.7) transparent transparent transparent;
+  border-radius: 70%/385px 385px 0 0 ;
+  top:141px;
+  right:117px;
+  transform: rotate(-221deg);
+  transition: opacity 1s linear;
+  opacity: 0;
+  pointer-events: none;
+  z-index:1;
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<pedigreechart>
+	<diagram level="1">
+		<shape type="circle_filled" answer="Maternal Grandmother" />
+		<connector type="single" level="2">
+			<shape type="circle" answer="none"/>
+			<connector type="single" level="3">
+				<shape type="square_filled" answer="Dylan" stem="true"/>
+				<shape type="square" answer="Jeff" stem="true"/>
+			</connector>
+			<shape type="square_filled" answer="Uncle Peter" stem="true"/>
+			<shape type="square" answer="Uncle John" stem="true" />
+			<connector type="single" level="3">
+				<shape type="square" answer="Nathan" stem="true" />
+				<shape type="circle" answer="Sylvia" stem="true" />
+			</connector>
+			<shape type="circle" answer="none"/>
+			<shape type="circle" answer="Aunt Jane" stem="true"/>
+			<connector type="single" level="3">
+				<shape type="square" answer="Alex" stem="true"/>
+			</connector>
+			<shape type="square" answer="none"/>
+			<shape type="circle" answer="Aunt Kate" stem="true"/>
+			<shape type="circle" answer="Mother" stem="true"/>
+			<connector type="single" level="3">
+				<shape type="circle" answer="Sister 1" stem="true"/>				
+				<shape type="circle" answer="Sister 2" stem="true"/>
+				<shape type="square" answer="Brother" stem="true"/>
+				<shape type="square" answer="none" label="Harry" stem="true" />
+			</connector>
+			<shape type="square" answer="Father" />
+		</connector>
+		<shape type="square" answer="Maternal Grandfather" />
+	</diagram>
+	<personlist>
+	 <person name="Maternal Grandmother"/>
+	 <person name="Maternal Grandfather"/>
+	 <person name="Uncle Peter"/>
+	 <person name="Uncle John"/>
+	 <person name="Aunt Kate"/>
+	 <person name="Aunt Jane"/>
+	 <person name="Dylan"/>
+	 <person name="Jeff"/>
+	 <person name="Nathan"/>
+	 <person name="Sylvia"/>
+	 <person name="Mother"/>
+	 <person name="Father"/>
+	 <person name="Alex"/>
+	 <person name="Sister 1"/>
+	 <person name="Sister 2"/>
+	 <person name="Brother"/>
+	</personlist>
+</pedigreechart>

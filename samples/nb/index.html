@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MIND MAP -- an interactive essay by Nicole Breit</title>
+    <link rel='stylesheet' type='text/css' href='./css/main.css' />
+    <script src="./scripts/text.js" type="text/javascript"></script>
+    <script src ="./scripts/functions.js" type="text/javascript"></script>
+  </head>
+  <body>
+
+      <audio id='sensory_cortex_audio' preload="auto">
+        <source src="./media/sensory_cortex.mp3" type="audio/mp3">
+        <source src="./media/sensory_cortex.ogg" type="audio/ogg">
+      </audio>
+
+      <audio id='frontal_lobe_audio' preload="auto">
+        <source src="./media/frontal_lobe.mp3" type="audio/mp3">
+        <source src="./media/frontal_lobe.ogg" type="audio/ogg">
+      </audio>
+
+      <audio id="brain_stem_audio" preload="auto">
+        <source src="./media/brain_stem.mp3" type="audio/mp3">
+        <source src="./media/brain_stem.ogg" type="audio/ogg">
+      </audio>
+
+      <audio id="brocas_area_audio" preload="auto">
+        <source src="./media/brocas_area.mp3" type="audio/mp3">
+        <source src="./media/brocas_area.ogg" type="audio/ogg">
+      </audio>
+
+      <audio id="cerebellum_audio" preload="auto">
+        <source src="./media/cerebellum.mp3" type="audio/mp3">
+        <source src="./media/cerebellum.ogg" type="audio/ogg">
+      </audio>
+
+      <audio id="occipital_lobe_audio" preload="auto">
+        <source src="./media/occipital_lobe.mp3" type="audio/mp3">
+        <source src="./media/occipital_lobe.ogg" type="audio/ogg">
+      </audio>
+
+      <audio id="temporal_lobe_audio" preload="auto">
+        <source src="./media/temporal_lobe.mp3" type="audio/mp3">
+        <source src="./media/temporal_lobe.ogg" type="audio/ogg">
+      </audio>
+
+      <audio id="title_audio">
+
+      </audio>
+
+
+
+      <div id="nb_interactive">
+	  <!-- MIND MAP title -->
+          <h1 id="mindmap_title">MIND<br/>MAP</h1>
+          <div id="title_highlight"></div>
+          <div id="title_line"></div>
+
+          <!-- Text Scroller -->
+          <div id="floating_scroller">
+              <p id="scroller_content"></p>
+              <span id="scroller_close_btn">x</span>
+              <span id="scroller_pause_btn">&#10074;&#10074;</span>
+          </div>
+
+          <!-- Sensory Cortex -->
+          <p class="brainArea" id="sensory_cortex">Sensory Cortex<br/><span class="small">(2m 37s)</span></p>
+          <div id="sensory_cortex_highlight"></div>
+          <div id="sensory_cortex_line"></div>
+
+          <!-- Frontal Lobe -->
+          <p class="brainArea" id="frontal_lobe">Frontal Lobe<br/><span class="small">(2m 50s)</span></p>
+          <div id="frontal_lobe_highlight"></div>
+          <div id="frontal_lobe_line"></div>
+
+          <!-- Brain Stem -->
+          <p class="brainArea" id="brain_stem">Brain Stem<br/><span class="small">(2m 44s)</span></p>
+          <div id="brain_stem_highlight"></div>
+          <div id="brain_stem_line"></div>
+
+          <!-- Brocas Area -->
+	      <p class="brainArea" id="brocas_area">Broca&rsquo;s Area<br/><span class="small">(2m 54s)</span></p>
+          <div id="brocas_area_highlight"></div>
+          <div id="brocas_area_line"></div>
+
+          <!-- Cerebellum -->
+	      <p class="brainArea" id="cerebellum">Cerebellum<br/><span class="small">(2m 50s)</span></p>
+          <div id="cerebellum_highlight"></div>
+          <div id="cerebellum_line"></div>
+	
+          <!-- Occipital Lobe -->
+		  <p class="brainArea" id="occipital_lobe">Occipital Lobe<br/><span class="small">(2m 39s)</span></p>
+          <div id="occipital_lobe_highlight"></div>
+          <div id="occipital_lobe_line"></div>
+
+          <!-- Temporal Lobe -->
+		  <p class="brainArea" id="temporal_lobe">Temporal Lobe<br/><span class="small">(2m 44s)</span></p>
+          <div id="temporal_lobe_highlight"></div>
+          <div id="temporal_lobe_line"></div>
+
+
+
+
+      </div>
+	<script src="./scripts/interactive.js" type="text/javascript"></script>
+
+
+
+  </body>
+</html>

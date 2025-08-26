@@ -1,0 +1,157 @@
+@import url(http://fonts.googleapis.com/css?family=Signika);
+@import url(http://fonts.googleapis.com/css?family=Overlock:400,900);
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+
+BODY{
+	margin:0px;
+	height:100%;
+	min-width:465px;
+}
+
+#header{
+	min-width:460px;
+}
+
+
+H3{
+	font-family:Overlock;
+	font-size:24px;
+}
+
+#header H1{
+ 	font-family:Overlock;
+ 	font-size:32pt;
+ 	margin-top:5px;
+ 	margin-bottom:0px;
+}
+
+#header #myself{
+	margin:10px;
+	float:left;
+	border: 5px solid #dddddd;
+    border-radius: 15px;
+}
+
+#header H2{
+ 	margin:0;
+ 	font-family:Signika;
+ 	font-size:14pt;
+ }
+ 
+#header p,a{
+ 	margin:0;
+ 	font-family:Signika;
+ 	font-size:12pt;
+
+ }
+
+#header nav{
+	float:right;
+	font-family:Signika;
+	font-size:12pt;
+	font-weight:bold;
+	margin-right:5px;
+}
+
+#header nav a{
+	text-decoration:none;
+}
+
+
+
+#section1link{
+	color:black;
+}
+
+#header nav a:Visited{
+	color:blue;
+}
+
+#header nav a:Hover{
+	color:#9191FF;
+}
+
+#header nav #navhelper{
+	width:45px;
+	height:3px;
+	background:black;
+	position:absolute;
+}
+
+#header 
+ {
+ 	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAFUlEQVQImWNggIIHDx78x8FgYGAAANNxCt4N1KO6AAAAAElFTkSuQmCC) repeat;
+ 	background-color:rgba(255,255,255,0.9);
+ 	width:100%;
+ 	height:172px;
+ 	position:fixed;
+ 	margin-left:auto;
+ 	margin-right:auto;
+ 	border-bottom: 8px solid #dddddd;
+	z-index:10;
+ }
+ 
+ 
+ #footer{
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAFUlEQVQImWNggIIHDx78x8FgYGAAANNxCt4N1KO6AAAAAElFTkSuQmCC) repeat;
+ 	background-color:rgba(255,255,255,0.9);
+	height:40px;
+	margin-left:auto;
+	margin-right:auto;
+	border-top: 8px solid #dddddd;
+	position:fixed;
+	bottom:0;
+	width:100%;
+	z-index:10;
+	
+ }
+ 
+.galleryimage  {
+ 
+ float:left;
+ margin-right:20px;
+ margin-top:-25px;
+ margin-bottom:30px;
+ }
+ 
+ .inlineicon{	
+margin-bottom:10px;
+margin-right:5px;
+width:24px;
+vertical-align:middle;
+ 
+ }
+ 
+.galleryimage img{
+	border:1px solid black;
+}
+
+.galleryimage p.caption{
+	text-align:center;
+	font-size:13px;
+	margin-top:0px;
+	font-family:Signika;
+}
+
+ 
+ a:focus{
+	outline:none;
+ }
+ 
+.content{
+	padding-top:225px;
+	width:90%;
+	height: 100%;
+	margin:auto;
+	font-family:Lato;
+	font-size:12pt;
+}
+
+#contentsection1, #contentsection2, #contentsection3 {
+	min-height:600px;
+	position:relative;
+	z-index:5;
+	padding-top:15px;
+	
+}
+

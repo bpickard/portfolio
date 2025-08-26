@@ -1,0 +1,154 @@
+/* CSS Document */
+
+body 
+{ 
+background-color: #FFFFFF;
+font-family: Arial, Verdana, sans-serif;
+font-size: 100%;
+line-height: 1.5em;
+max-width: 800px;
+color: #122403;
+margin-top: 1em;
+margin-right: 5em;
+margin-bottom: 3em;
+margin-left: 1em;
+}
+
+.solid 
+{border-style: solid;
+border-width: 1px;
+border-color: #000000;
+} 
+
+h2, h4, h5, h6
+{
+font-family: Arial, Verdana, sans-serif;
+margin-bottom: .6em;
+margin-top: 1.5em;
+}
+
+h1
+{
+font-family: Arial, Verdana, sans-serif;
+margin-bottom: .6em;
+margin-top: 1.5em;
+line-height: 1.25em;
+}
+
+h3
+{
+font-family: Arial, Verdana, sans-serif;
+font-style:italic;
+margin-bottom: .6em;
+margin-top: 1.5em;
+}
+
+p
+{
+font-family: Arial, Verdana, sans-serif;
+font-size: 100%;
+margin-bottom: 1em;
+}
+
+.caption
+{
+font-size: 90%;
+font-style: italic;
+margin-bottom: 1em;
+}
+
+.halfspaceafter
+{
+margin-bottom: -.5em;
+}
+
+li
+{
+padding-bottom: .5em;
+}
+
+.nospaceafter
+{
+margin-bottom: -1em;
+}
+
+.reference
+{
+font-size: 95%;
+text-indent: -3em;
+margin-left: 3em;
+margin-bottom: 1em;
+}
+
+.spacebefore
+{
+margin-top: 2em;
+}
+
+.spaceafter
+{
+margin-bottom: 1em;
+}
+
+.tablehead
+{
+font-weight: bold;
+font-variant: small-caps;
+text-align: center;
+}
+
+.quote
+{
+margin: 1em 4em 0em 4em;
+font-size: 90%;
+}
+
+.quoteref
+{
+text-align: right;
+font-size: 90%;
+margin: 0em 4em 2em 4em
+}
+
+a:link {color: #0033CC; text-decoration: underline;}
+a:visited {color: #996699}
+a:hover {color: #9966FF}
+a:active {color: #006633}
+
+table 
+{
+font-size: 100%;
+margin-bottom: 3em;
+}
+
+tablereading 
+{
+font-size: 100%;
+margin-bottom: 1em;
+}
+
+table td p
+{
+padding: 5px;
+}
+
+.hangingindent 
+{
+text-indent: -0.42in;
+padding-left: 0.42in;
+}
+.nosphangingindent 
+{
+text-indent: -0.42in;
+padding-left: 0.42in;
+margin-bottom: -1em;
+}
+.readings
+{
+font-size: 90%
+text-indent: -0.25in;
+padding-left: 0.25in;
+}.gradecolumn {
+	text-align: left;
+	text-indent: 40px;
+}
